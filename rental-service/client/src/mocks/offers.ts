@@ -12,18 +12,18 @@ const offers: FullOffer[] = [
             'apartment-02.jpg',
             'apartment-03.jpg'
         ],
-        'city': {
-            'name': 'Paris',
-            'location': {
-                'latitude': 48.85661,
-                'longitude': 2.351499,
-                'zoom': 13
+        city: {
+            name: 'Amsterdam',
+            location: {
+                latitude: 52.370216,
+                longitude: 4.895168,
+                zoom: 13
             }
         },
-        'location': {
-            'latitude': 48.86861000000004,
-            'longitude': 2.342499,
-            'zoom': 16
+        location: {
+            latitude: 52.375149,
+            longitude: 4.894352,
+            zoom: 16
         },
         'goods': [
             'Heating',
@@ -100,16 +100,16 @@ const offers: FullOffer[] = [
         type: 'house',
         price: 280,
         city: {
-            name: 'Cologne',
+            name: 'Amsterdam',
             location: {
-                latitude: 50.937531,
-                longitude: 6.960278,
+                latitude: 52.370216,
+                longitude: 4.895168,
                 zoom: 13
             }
         },
         location: {
-            latitude: 50.941278,
-            longitude: 6.957612,
+            latitude: 52.375149,
+            longitude: 4.894352,
             zoom: 16
         },
         isFavorite: true,
@@ -141,16 +141,16 @@ const offers: FullOffer[] = [
         type: 'room',
         price: 120,
         city: {
-            name: 'Hamburg',
+            name: 'Amsterdam',
             location: {
-                latitude: 53.550341,
-                longitude: 9.992600,
+                latitude: 52.370216,
+                longitude: 4.895168,
                 zoom: 13
             }
         },
         location: {
-            latitude: 53.553341,
-            longitude: 9.995600,
+            latitude: 52.375149,
+            longitude: 4.894352,
             zoom: 16
         },
         isFavorite: false,

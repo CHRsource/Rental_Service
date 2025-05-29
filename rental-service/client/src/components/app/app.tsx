@@ -8,14 +8,16 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { AppRoute, AuthorizationStatus } from "../../const";
 import { PrivateRoute } from '../private-route/private-route';
 import { FullOffer, OffersList } from '../../types/offer';
+import { Review } from '../../types/review';
 
 type AppMainPageProps = {
     rentalOffersCount: number;
     offersList: OffersList[];
     offers: FullOffer[];
+    reviews: Review[];
 }
 
-function App({ rentalOffersCount, offers, offersList }: AppMainPageProps): JSX.Element {
+function App({ rentalOffersCount, offers, offersList, reviews }: AppMainPageProps): JSX.Element {
     return (
         <BrowserRouter>
             <Routes>
@@ -35,7 +37,7 @@ function App({ rentalOffersCount, offers, offersList }: AppMainPageProps): JSX.E
                             <FavoritesPage favoritesList={ offersList }   />
                         </PrivateRoute>} />
 
-                <Route path={ `${AppRoute.Offer}/:id` } element={<OfferPage offers={offers}/>} />
+                <Route path={ `${AppRoute.Offer}/:id` } element={<OfferPage offers={offers} reviews={reviews} offersList={offersList}/>} />
                 <Route path="*" element={<NotFoundPage />} />
             </Routes>
         </BrowserRouter>
